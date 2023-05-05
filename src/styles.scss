@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+//variable
+@import '../src/assets/variable.scss';
+//lib
+@import 'bootstrap';
+//page
+@import '../src/app/beach-filter/beach-filter.component.scss';
+@import '../src/app/contact-us/contact-us.component.scss';
+@import '../src/app/dashboard-client/dashboard-client.component.scss';
+@import '../src/app/deckchair-location/deckchair-location.component.scss';
+@import '../src/app/destination/destination.component.scss';
+@import '../src/app/homepage/homepage.component.scss';
+@import '../src/app/login/login.component.scss';
+@import '../src/app/paypal/paypal.component.scss';
+@import '../src/app/profile/profile.component.scss';
+@import '../src/app/reservation/reservation.component.scss';
+@import '../src/app/signin/signin.component.scss';
+//base
+@import '../src/app/card/card.component.scss';
+@import '../src/app/footer/footer.component.scss';
+@import '../src/app/navbar/navbar.component.scss';
+//admin
+@import '../src/app/admin/admin.component.scss';

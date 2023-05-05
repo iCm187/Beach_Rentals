@@ -18,6 +18,7 @@ import { DashboardClientComponent } from './dashboard-client/dashboard-client.co
 import { PaypalComponent } from './paypal/paypal.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
 import { AdminComponent } from './admin/admin.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AdminComponent } from './admin/admin.component';
     DashboardClientComponent,
     PaypalComponent,
     BookingSummaryComponent,
-    AdminComponent
+    AdminComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
