@@ -1,22 +1,71 @@
 <section class="beach-search">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Recherchez votre plage idéale</h2>
-          <form class="search-form" action="#" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" name="location" placeholder="Lieu">
-            </div>
-            <div class="form-group">
-              <input type="date" class="form-control" name="arrivalDate" placeholder="Date d'arrivée">
-            </div>
-            <div class="form-group">
-              <input type="date" class="form-control" name="departureDate" placeholder="Date de départ">
-            </div>
-            <button type="submit" class="btn btn-primary">Rechercher</button>
-          </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Trouvez l’emplacement de vos rêves</h2>
+        <form class="search-form" action="#" method="post">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="location"
+              placeholder="Lieu"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="date"
+              class="form-control"
+              name="arrivalDate"
+              placeholder="Date d'arrivée"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="date"
+              class="form-control"
+              name="departureDate"
+              placeholder="Date de départ"
+            />
+          </div>
+          <div class="form-group">
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="destinations">
+  <div class="container">
+    <h2 class="destination-title">Nos Destinations</h2>
+    <div class="carousel">
+      <div class="card" *ngFor="let item of carouselItems">
+        <div
+          class="card-image"
+          [style.backgroundImage]="'url(' + item.image + ')'"
+        >
+          <h3 class="card-title">{{ item.title }}</h3>
         </div>
       </div>
     </div>
-  </section>
-  
+    <div class="card-info-container">
+      <div class="card-info" *ngFor="let item of descriptionItems">
+        <img [src]="item.logo" alt="Logo" class="card-logo" />
+        <p class="card-description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="owner-section">
+  <div class="container">
+    <div class="content-wrapper">
+      <h2>Vous êtes propriétaire ?</h2>
+      <p>Publiez votre plage sur Beach Rentals.</p>
+      <a href="contact" class="btn btn-secondary">Contactez-nous</a>
+    </div>
+  </div>
+</section>
+
