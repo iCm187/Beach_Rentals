@@ -1,31 +1,30 @@
 .beach-search {
-    background-image: url('/assets/images/background1.png');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0;
-    color: #fff;
-  }
-  
-  .beach-search h2 {
+  background-image: url('/assets/images/background1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+  color: #fff;
+
+  h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
+}
 
-  .search-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .search-form .form-group {
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .form-group {
     margin-right: 10px;
   }
-  
-  .search-form .form-control {
+
+  .form-control {
     width: 200px;
   }
-  
-  .search-form button {
+
+  button {
     margin-top: 10px;
   }
-  
+}
