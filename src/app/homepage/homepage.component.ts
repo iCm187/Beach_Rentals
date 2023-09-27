@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
+
 export class HomepageComponent {
   carouselItems = [
     { title: 'Destination 1', image: '/assets/images/plage.png' },

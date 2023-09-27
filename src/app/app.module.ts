@@ -19,6 +19,7 @@ import { PaypalComponent } from './paypal/paypal.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
 import { AdminComponent } from './admin/admin.component';
 import { CardComponent } from './card/card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
