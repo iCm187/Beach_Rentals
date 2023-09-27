@@ -19,7 +19,7 @@ import { PaypalComponent } from './paypal/paypal.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
 import { AdminComponent } from './admin/admin.component';
 import { CardComponent } from './card/card.component';
-import { PageErreurComponent } from './page-erreur/page-erreur.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,11 +40,11 @@ import { PageErreurComponent } from './page-erreur/page-erreur.component';
     BookingSummaryComponent,
     AdminComponent,
     CardComponent,
-    PageErreurComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
