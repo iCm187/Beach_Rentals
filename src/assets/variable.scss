@@ -1,4 +1,9 @@
-$primary-color: #0061C0;
-$secondary-color: #00FA9A;
-$back: #F5DEB3;
-$border-radius: #09FFFF;
+:root {
+    --primary-color: #0061C0;
+    --secondary-color: #00FA9A;
+    --background-color: #F5DEB3;
+    --border-radius: #09FFFF;
+    --white-color: #FFFFFF;
+    --grey-color: #bcbcbc;
+    --dark-grey-color: #333;  
+}

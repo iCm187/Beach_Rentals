@@ -1,1 +1,39 @@
-<p>contact-us works!</p>
+<div class="contact-form">
+    <h2>Contactez-nous</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" formControlName="name" />
+        <div *ngIf="contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched)" class="error">
+          <div>Le nom est obligatoire.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Prenom</label>
+        <input type="text" id="lastname" formControlName="lastname" />
+        <div *ngIf="contactForm.get('lastname')?.invalid && (contactForm.get('lastname')?.dirty || contactForm.get('lastname')?.touched)" class="error">
+          <div>Le prénom est obligatoire.</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" />
+        <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)" class="error">
+          <div>L'email est obligatoire.</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)" class="error">
+          <div>Le message est obligatoire.</div>
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+    </form>
+</div>

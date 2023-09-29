@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { LoginComponent } from './login/login.component';
-import { SigninComponent } from './signin/signin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { DestinationComponent } from './destination/destination.component';
 import { DeckchairLocationComponent } from './deckchair-location/deckchair-location.component';
@@ -20,6 +19,7 @@ import { BookingSummaryComponent } from './booking-summary/booking-summary.compo
 import { AdminComponent } from './admin/admin.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     ReservationComponent,
     LoginComponent,
-    SigninComponent,
     HomepageComponent,
     DestinationComponent,
     DeckchairLocationComponent,
@@ -44,7 +43,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
