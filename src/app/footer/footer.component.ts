@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   logoPath = 'assets/images/Logo.png';
   links = [
-    { title: 'ACCUEIL', url: './homepage/homepage.component' },
-    { title: 'Nos Destination', url: './destination/destination.component' },
-    { title: 'Connexion', url: './login/login.component' },
-    { title: 'Contactez-Nous', url: './contact-us/contact-us.component' }
+    { title: 'ACCUEIL', url: '/accueil' },
+    { title: 'Nos Destination', url: '/destinations' },
+    { title: 'Connexion', url: '/connexion' },
+    { title: 'Contactez-Nous', url: '/contact' }
   ];
 }
 
