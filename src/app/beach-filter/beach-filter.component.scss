@@ -1,0 +1,19 @@
+// beach-filter.component.scss
+.beach-filter {
+  display: flex;
+  .filter-sidebar {
+    // Styles for the filter sidebar
+  }
+  .beach-locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    .beach-location {
+      // Styles for each beach location
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

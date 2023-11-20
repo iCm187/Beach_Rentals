@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,11 +7,11 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent {
-  contactForm = this.fb.group({
-    name: ['', Validators.required],
-    lastname: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    message: ['', Validators.required],
+  contactForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    firstname: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    message: new FormControl('', [Validators.required])
   });
 
   constructor(private fb: FormBuilder) {}
