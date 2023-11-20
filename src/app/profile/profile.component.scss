@@ -1,0 +1,15 @@
+.profile-page {
+  max-width: 600px;
+  margin: auto;
+
+  .form-field {
+    margin-bottom: 1rem;
+
+    input, select {
+      width: 100%;
+    }
+  }
+
+  .validate-button {
+  }
+}

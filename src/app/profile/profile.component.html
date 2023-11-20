@@ -1,1 +1,42 @@
-<p>profile works!</p>
+<div class="profile-page">
+  <h1>Mon Profil</h1>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="form-field">
+      <input formControlName="nom" placeholder="Nom">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input formControlName="prenom" placeholder="Prenom">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input type="email" formControlName="email" placeholder="Votre adresse mail">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input type="password" formControlName="motDePasse" placeholder="Mot de passe">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input type="password" formControlName="confirmationMotDePasse" placeholder="Confirmation mot de passe">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input formControlName="adresseDeResidence" placeholder="Adresse de residence">
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <select formControlName="moyenDePaiement">
+        <option value="" disabled>Choisir un moyen de paiement</option>
+        <!-- Add payment methods options here -->
+      </select>
+      <!-- Add icon here if needed -->
+    </div>
+    <div class="form-field">
+      <input formControlName="departementVille" placeholder="Departement, Ville">
+      <!-- Add icon here if needed -->
+    </div>
+    <button type="submit" class="validate-button">Validez les modifications</button>
+  </form>
+</div>
+
