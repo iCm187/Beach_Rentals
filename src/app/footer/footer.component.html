@@ -7,7 +7,7 @@
       <div class="links-section">
         <ul class="custom-nav">
           <li *ngFor="let link of links">
-            <a [href]="link.url">{{ link.title }}</a>
+            <a [routerLink]=[link.url]>{{ link.title }}</a>
           </li>
         </ul>
         <p>© 2023 Beach Rentals, an IM Group company. All rights reserved.</p>

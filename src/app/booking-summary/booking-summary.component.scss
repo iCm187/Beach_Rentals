@@ -1,0 +1,38 @@
+.beach-booking {
+  text-align: center;
+}
+
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Adjust based on the actual number of seats per row */
+  gap: 5px;
+}
+
+.seat {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.seat.available {
+  background-color: #000; /* black for available */
+}
+
+.seat.selected {
+  background-color: #00FA9A; /* green for selected */
+}
+
+.seat.booked {
+  background-color: #808080; /* grey for booked */
+  cursor: not-allowed;
+}
+
+.beach {
+  margin-top: 20px;
+}
+
+.next-step-button {
+  /* Styles for your button */
+}

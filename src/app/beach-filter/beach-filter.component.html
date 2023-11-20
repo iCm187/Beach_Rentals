@@ -1,1 +1,28 @@
-<p>beach-filter works!</p>
+<!-- beach-filter.component.html -->
+<div class="beach-filter">
+  <aside class="filter-sidebar">
+    <h2>FILTRER PAR</h2>
+    <!-- Example of filtering by location -->
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+    <button (click)="filterByCriteria('location', 'Frejus')">Filtre par localisation</button>
+
+  </aside>
+
+  <section class="beach-locations">
+    <div *ngFor="let beachLocation of filteredBeachLocations" class="beach-location">
+      <img [src]="beachLocation.imageUrl" alt="{{ beachLocation.name }}">
+      <div class="location-info">
+        <h3>{{ beachLocation.name }}</h3>
+        <p>{{ beachLocation.location }}</p>
+      </div>
+    </div>
+  </section>
+</div>
+
